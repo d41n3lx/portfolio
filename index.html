@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel G's Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/home.css" />
+
+  <!-- Font Awesome (latest version) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-bxHY4b7ZKCSnOa7XCNz4b9p6gQef3KPmXQ9JvxgK91U4LxkDPKq+clCUZ9d3PTMFR+zFR1v6Rk1WZ5pCzUJ+Rw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="nav-bar">
+    <div class="logo">Daniel G's Portfolio</div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:dapereira519axa@gmail.com" class="icon gmail">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://github.com/your-github-username" target="_blank" class="icon github">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="./assets/images/me.jpg" alt="Daniel Portrait" />
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Daniel G.</span></h1>
+        <p>
+          I'm a Web Developer and UI/UX Designer, creating clean, functional, and
+          user-friendly digital experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I specialize in modern web development and intuitive UI/UX design. My
+      goal is to turn ideas into engaging digital experiences that users love.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">UI/UX Design</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="portfolio-preview">
+    <h2>My Projects</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <h3>UI/UX Designs</h3>
+        <p>Figma designs for Food Delivery & Banking Apps</p>
+        <a href="./projects/ui-ux.html" class="btn">View Designs</a>
+      </div>
+      <div class="project-card">
+        <h3>My Website</h3>
+        <p>The website I built using HTML, CSS, and JS</p>
+        <a
+          href="https://d41n3lx.github.io/dg-estate-services"
+          target="_blank"
+          class="btn"
+          >Visit Website</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form
+      action="mailto:dapereira519axa@gmail.com"
+      method="POST"
+      enctype="text/plain"
+    >
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">D&G Estate Services</div>
+
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="contact-info">
+        <h4>Contact Info</h4>
+        <p>Email: dapereira519axa@gmail.com</p>
+        <p>Phone: +234 807 7185 393</p>
+        <p>Address: Bethel Oborevwori Str, Osubi</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://wa.me/08077185393" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/your-github-username" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+    <p class="copyright">© 2025 D&G Estate Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
