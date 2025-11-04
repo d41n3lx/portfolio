@@ -65,25 +65,32 @@ a {
   width: 100%;
 }
 
+/* ===== Social Icons ===== */
 .social-links {
   display: flex;
   gap: 1rem;
 }
 
 .icon {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   transition: color 0.3s ease, transform 0.3s ease;
   color: #e6e6e6;
 }
 
+.icon:hover {
+  transform: scale(1.2);
+}
+
 .icon.whatsapp:hover {
   color: #25D366;
-  transform: scale(1.2);
 }
 
 .icon.gmail:hover {
   color: #EA4335;
-  transform: scale(1.2);
+}
+
+.icon.github:hover {
+  color: #6e5494;
 }
 
 /* ===== Hero Section ===== */
@@ -271,13 +278,17 @@ footer {
 .footer-socials a {
   color: #fff;
   margin: 0 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-socials a:hover {
   color: #00bfff;
   transform: scale(1.2);
+}
+
+.footer-socials a:hover .fa-github {
+  color: #6e5494;
 }
 
 .copyright {
