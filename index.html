@@ -3,89 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel G's Portfolio</title>
+  <title>Daniel G | Portfolio</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- ===== Header ===== -->
   <header class="nav-bar">
     <div class="logo">Daniel G<span>'s Portfolio</span></div>
 
     <nav class="nav-links" aria-label="Main Navigation">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-<div class="social-links">
-  <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon-img">
-  </a>
 
-  <a href="mailto:dapereira519axa@gmail.com" target="_blank" class="icon gmail" aria-label="Gmail">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Gmail" class="icon-img">
-  </a>
+    <!-- Social Icons -->
+    <div class="social-links">
+      <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon-img">
+      </a>
 
-  <a href="https://github.com/d41n3lx" target="_blank" class="icon github" aria-label="GitHub">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img">
-  </a>
-</div>
+      <a href="mailto:dapereira519axa@gmail.com" target="_blank" class="icon gmail" aria-label="Gmail">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Gmail" class="icon-img">
+      </a>
 
-  <!-- Hero Section -->
+      <a href="https://github.com/d41n3lx" target="_blank" class="icon github" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img">
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
   <section id="home" class="hero">
     <div class="hero-content">
       <div class="hero-image">
         <img src="me.jpg" alt="Portrait of Daniel G" />
       </div>
+
       <div class="hero-text">
         <h1>Hi, I'm <span>Daniel G.</span></h1>
-        <p>I'm a Web Developer and UI/UX Designer who crafts clean, functional, and user-friendly digital experiences.</p>
+        <p>A Web Developer & UI/UX Designer creating clean, interactive, and responsive user experiences.</p>
+        <a href="#projects" class="btn">View My Work</a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ===== About Section ===== -->
   <section id="about" class="about">
     <h2>About Me</h2>
-    <p>I specialize in modern web development and intuitive UI/UX design. My goal is to turn ideas into engaging, meaningful experiences users love.</p>
+    <p>I’m passionate about crafting visually appealing and efficient web interfaces that balance creativity with usability. With a strong background in front-end development and design thinking, I focus on building solutions that delight users and deliver results.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section class="skills">
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="skills">
     <h2>My Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">HTML</div>
       <div class="skill-card">CSS</div>
       <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
       <div class="skill-card">UI/UX Design</div>
+      <div class="skill-card">Figma</div>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- ===== Projects Section ===== -->
   <section id="projects" class="portfolio-preview">
-    <h2>My Projects</h2>
+    <h2>Featured Projects</h2>
     <div class="portfolio-grid">
       <div class="project-card">
-        <h3>UI/UX Designs</h3>
-        <p>Figma designs for Food Delivery and Banking Apps.</p>
-        <a href="./projects/ui-ux.html" class="btn">View Designs</a>
+        <h3>Portfolio Website</h3>
+        <p>A sleek, responsive portfolio built with HTML, CSS, and JavaScript.</p>
+        <a href="https://d41n3lx.github.io/dg-portfolio" target="_blank" class="btn">View Live</a>
       </div>
+
       <div class="project-card">
-        <h3>My Website</h3>
-        <p>A responsive website built with HTML, CSS, and JavaScript.</p>
-        <a
-          href="https://d41n3lx.github.io/dg-estate-services"
-          target="_blank"
-          class="btn"
-          >Visit Website</a>
+        <h3>UI/UX Concepts</h3>
+        <p>Creative app prototypes and wireframes designed in Figma.</p>
+        <a href="./projects/ui-ux.html" class="btn">View Designs</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- ===== Contact Section ===== -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form action="mailto:dapereira519axa@gmail.com" method="POST" enctype="text/plain">
@@ -96,7 +101,7 @@
     </form>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">Daniel G's Portfolio</div>
@@ -105,6 +110,7 @@
         <h4>Quick Links</h4>
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
@@ -116,24 +122,23 @@
         <p>Address: Bethel Oborevwori Str, Osubi</p>
       </div>
 
-     <div class="footer-socials">
-  <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon-img">
-  </a>
+      <!-- Footer Social Icons -->
+      <div class="footer-socials">
+        <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon-img">
+        </a>
 
-  <a href="mailto:dapereira519axa@gmail.com" target="_blank" class="icon gmail" aria-label="Gmail">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Gmail" class="icon-img">
-  </a>
+        <a href="mailto:dapereira519axa@gmail.com" target="_blank" class="icon gmail" aria-label="Gmail">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Gmail" class="icon-img">
+        </a>
 
-  <a href="https://github.com/d41n3lx" target="_blank" class="icon github" aria-label="GitHub">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img">
-  </a>
-</div>
-
+        <a href="https://github.com/d41n3lx" target="_blank" class="icon github" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img">
+        </a>
+      </div>
+    </div>
 
     <p class="copyright">© 2025 Daniel G. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-
