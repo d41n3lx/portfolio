@@ -74,25 +74,38 @@ img {
   width: 100%;
 }
 
-/* ===== Social Icons ===== */
-.social-links {
+/* ===== Social Icons (Header + Footer) ===== */
+.social-links,
+.footer-socials {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon {
-  font-size: 1.4rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+.icon-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1);
 }
 
-.icon:hover,
-.icon:focus {
+.icon-img:hover {
   transform: scale(1.2);
 }
 
-.icon.whatsapp:hover { color: #25D366; }
-.icon.gmail:hover { color: #EA4335; }
-.icon.github:hover { color: #6e5494; }
+/* Brand hover colors */
+.whatsapp .icon-img:hover {
+  filter: drop-shadow(0 0 5px #25D366) saturate(2);
+}
+
+.gmail .icon-img:hover {
+  filter: drop-shadow(0 0 5px #EA4335) saturate(2);
+}
+
+.github .icon-img:hover {
+  filter: drop-shadow(0 0 5px #6e5494) saturate(2);
+}
 
 /* ===== Hero Section ===== */
 .hero {
@@ -216,12 +229,13 @@ section:nth-child(even) {
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  transition: border 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact input:focus,
 .contact textarea:focus {
   border: 1px solid #00bfff;
+  box-shadow: 0 0 8px #00bfff60;
 }
 
 .contact button {
@@ -265,46 +279,13 @@ footer {
 .quick-links a {
   display: block;
   margin: 0.4rem 0;
+  color: #ccc;
 }
 
 .quick-links a:hover {
   color: #00bfff;
 }
-.social-links,
-.footer-socials {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
 
-.icon,
-.footer-socials a {
-  font-size: 1.4rem;
-  color: #e6e6e6;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.icon:hover,
-.footer-socials a:hover {
-  transform: scale(1.2);
-}
-
-/* Icon hover colors */
-.icon.whatsapp:hover,
-.footer-socials a[href*="wa.me"]:hover {
-  color: #25D366;
-}
-
-.icon.gmail:hover,
-.footer-socials a[href*="mailto"]:hover {
-  color: #EA4335;
-}
-
-.icon.github:hover,
-.footer-socials a[href*="github.com"]:hover {
-  color: #6e5494;
-}
 .copyright {
   border-top: 1px solid #222;
   padding-top: 1rem;
@@ -318,6 +299,10 @@ footer {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
   }
 
   .hero {
